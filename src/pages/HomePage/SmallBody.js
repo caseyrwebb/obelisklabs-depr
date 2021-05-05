@@ -25,7 +25,7 @@ function SmallBody() {
               marginTop: "1em",
             }}
           >
-            We help solve business problems with software solutions.
+            I help solve business problems with software solutions.
           </h1>
           <div
             style={{
@@ -41,7 +41,7 @@ function SmallBody() {
                 lineHeight: "150%",
               }}
             >
-              We work with our clients to develop software appications that will
+              I work with my clients to develop software appications that will
               meet their specific business needs.
             </h2>
           </div>

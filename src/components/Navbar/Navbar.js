@@ -33,23 +33,23 @@ function SmallNav() {
         >
           <h1
             style={{
-              lineHeight: "0px",
+              lineHeight: "6px",
               fontFamily: "Montserrat, sans-serif",
               fontWeight: "500",
             }}
           >
-            Obelisk
+            Casey
           </h1>
           <h2
             style={{
               marginTop: "0px",
               alignSelf: "flex-end",
-              lineHeight: "0px",
+              lineHeight: "6px",
               fontFamily: "Montserrat, sans-serif",
               fontWeight: "400",
             }}
           >
-            Labs
+            Webb
           </h2>
         </div>
       </div>
@@ -107,23 +107,23 @@ function LargeNav() {
         >
           <h1
             style={{
-              lineHeight: "0px",
+              lineHeight: "6px",
               fontFamily: "Montserrat, sans-serif",
               fontWeight: "500",
             }}
           >
-            Obelisk
+            Casey
           </h1>
           <h2
             style={{
               marginTop: "0px",
               alignSelf: "flex-end",
-              lineHeight: "0px",
+              lineHeight: "6px",
               fontFamily: "Montserrat, sans-serif",
               fontWeight: "400",
             }}
           >
-            Labs
+            Webb
           </h2>
         </div>
       </div>

@@ -1,9 +1,15 @@
 import "./HomeBody.css";
 import { useState, useEffect } from "react";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import { FaScroll } from "react-icons/fa";
+import { FaCoins } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 import SpaceImage from "../../components/SpaceImage/SpaceImage";
 import ComputerImage from "./ComputerImage";
+import PhoneImage from "./PhoneImage";
+import Contact from "../Contact/Contact";
 
 function LargeBody() {
   let mark = "'";
@@ -28,7 +34,7 @@ function LargeBody() {
               marginTop: "1em",
             }}
           >
-            We help solve business problems with software solutions.
+            I help solve business problems with software solutions.
           </h1>
           <div
             style={{
@@ -44,8 +50,8 @@ function LargeBody() {
                 lineHeight: "150%",
               }}
             >
-              We work with our clients to develop software applications that
-              will meet their specific business needs.
+              I work with my clients to develop software applications that will
+              meet their specific business needs.
             </h2>
           </div>
         </div>
@@ -152,7 +158,7 @@ function LargeBody() {
                   marginTop: "-0.25em",
                 }}
               >
-                iOS or Android? No matter what device, we use hybrid style
+                iOS or Android? No matter what device, I use hybrid style
                 programming to make sure that you're covered.
               </h2>
               <ul
@@ -170,7 +176,7 @@ function LargeBody() {
                   <h2>- Easy distribution.</h2>
                 </li>
                 <li>
-                  <h2>- Store data... in the cloud.</h2>
+                  <h2>- Onboard, at scale.</h2>
                 </li>
                 <li>
                   <h2>- Make app</h2>
@@ -178,7 +184,145 @@ function LargeBody() {
               </ul>
             </div>
           </div>
-          <ComputerImage />
+          <PhoneImage />
+        </div>
+        <div
+          style={{
+            backgroundColor: "white",
+            marginTop: "6em",
+            padding: "1em",
+          }}
+        >
+          <h1
+            style={{
+              color: "#000",
+              fontFamily: "Montserrat, sans-serif",
+              fontWeight: "900",
+            }}
+          >
+            Recent Work.
+          </h1>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginTop: "3em",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              color: "#00e676",
+              alignItems: "center",
+              justifyContent: "center",
+              marginRight: "3em",
+            }}
+          >
+            <FaScroll style={{ fontSize: "4em" }} />
+            <h1
+              style={{
+                fontFamily: "Chivo, sans-serif",
+                fontWeight: "600",
+                fontSize: "4em",
+              }}
+            >
+              Fetch
+            </h1>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              color: "#fff",
+              alignItems: "center",
+              justifyContent: "center",
+              marginLeft: "3em",
+            }}
+          >
+            <FaCoins style={{ fontSize: "4em" }} />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <h1
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                  fontWeight: "400",
+                  fontSize: "2em",
+                  lineHeight: "0px",
+                  marginBottom: "0.25em",
+                  marginLeft: "0.25em",
+                }}
+              >
+                Hydro
+              </h1>
+              <h1
+                style={{
+                  fontFamily: "Chivo, sans-serif",
+                  fontWeight: "600",
+                  fontSize: "2em",
+                  lineHeight: "0px",
+                  marginLeft: "1.25em",
+                }}
+              >
+                Exchange
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundColor: "#fff",
+            borderRadius: "18px",
+            paddingTop: "0.25em",
+            paddingRight: "1em",
+            paddingBottom: "0.25em",
+            paddingLeft: "1em",
+            marginTop: "1em",
+            marginBottom: "4em",
+          }}
+        >
+          <p
+            style={{
+              color: "#000",
+              fontFamily: "Ubuntu Mono, monospace",
+              fontWeight: "700",
+              fontSize: "1.25em",
+              lineHeight: "0",
+            }}
+          >
+            Learn More.
+          </p>
+        </div>
+      </div>
+      <Contact />
+      <div
+        style={{
+          backgroundColor: "#fff",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <p
+          style={{
+            color: "#000",
+            fontFamily: "Ubuntu Mono, monospace",
+            lineHeight: "3em",
+            marginLeft: "1em",
+          }}
+        >
+          Email: caseyrwebb@gmail.com
+        </p>
+        <div
+          style={{ display: "flex", flexDirection: "row", marginRight: "2em" }}
+        >
+          <FaGithub style={{ fontSize: "2.5em", marginRight: "0.25em" }} />
+          <FaLinkedin style={{ fontSize: "2.5em", marginLeft: "0.25em" }} />
         </div>
       </div>
     </>

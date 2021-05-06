@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+
+.card-fetch:hover {
+  border: 0.5em solid #00e676;
+  display: flex;
+}
+
+.card-hydro:hover {
+  border: 0.5em solid #fff;
+  display: flex;
+}
+
+.card-splash:hover {
+  border: 0.5em solid #81d4fa;
+  display: flex;
+}

@@ -3,7 +3,7 @@ import Image from "../../assets/space.jpeg";
 
 function LargeSpace() {
   return (
-    <div style={{ height: "50vh", overflow: "hidden" }}>
+    <div style={{ maxHeight: "50vh", overflow: "hidden" }}>
       <img
         src={Image}
         style={{
@@ -35,14 +35,14 @@ function MediumSpace() {
 
 function SmallSpace() {
   return (
-    <div style={{ height: "50vh", overflow: "hidden" }}>
+    <div style={{ maxHeight: "40vh", overflow: "hidden" }}>
       <img
         src={Image}
         style={{
           width: "150%",
           position: "relative",
           top: "50px",
-          left: "-80px",
+          left: "-120px",
         }}
       ></img>
     </div>

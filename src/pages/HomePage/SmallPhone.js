@@ -32,7 +32,7 @@ function Graphic() {
   );
 }
 
-function PhoneImage() {
+function SmallPhone() {
   return (
     <div
       style={{
@@ -42,8 +42,9 @@ function PhoneImage() {
         flexDirection: "column",
         alignItems: "center",
         maxWidth: "650px",
-        minWidth: "450px",
-        minHeight: "350px",
+        minWidth: "200px",
+        minHeight: "300px",
+        maxHeight: "350px",
       }}
     >
       <div
@@ -90,4 +91,4 @@ function PhoneImage() {
   );
 }
 
-export default PhoneImage;
+export default SmallPhone;

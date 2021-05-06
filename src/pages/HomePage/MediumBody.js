@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 import SpaceImage from "../../components/SpaceImage/SpaceImage";
 import ComputerImage from "./ComputerImage";
 import PhoneImage from "./PhoneImage";
-import Contact from "../Contact/Contact";
+import Contact from "../Contact/MediumContact";
 
 function MediumBody() {
   let mark = "'";
@@ -62,6 +62,7 @@ function MediumBody() {
           style={{
             display: "flex",
             flexDirection: "row",
+            flexWrap: "wrap",
             width: "100%",
             marginTop: "3em",
           }}
@@ -73,6 +74,7 @@ function MediumBody() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              minWidth: "500px",
             }}
           >
             <h1
@@ -126,6 +128,7 @@ function MediumBody() {
           style={{
             display: "flex",
             flexDirection: "row",
+            flexWrap: "wrap",
             width: "100%",
             marginTop: "6em",
           }}
@@ -137,6 +140,7 @@ function MediumBody() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
+              minWidth: "500px",
             }}
           >
             <h1

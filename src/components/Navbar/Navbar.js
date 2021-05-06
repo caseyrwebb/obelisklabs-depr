@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import Link from "react-router-dom/Link";
+import { Redirect } from "react-router-dom";
 import { useState, useEffect } from "react";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
@@ -19,6 +21,7 @@ function SmallNav() {
 
   const handleClose = () => {
     setAnchorEl(null);
+    window.location.href = "/work";
   };
 
   return (
@@ -137,7 +140,9 @@ function LargeNav() {
             marginRight: "0.5em",
           }}
         >
-          Home.
+          <Link to="/" style={{ textDecoration: "none", color: "#000" }}>
+            Home.
+          </Link>
         </h2>
         <h2
           style={{
@@ -146,7 +151,9 @@ function LargeNav() {
             marginRight: "0.5em",
           }}
         >
-          Work.
+          <Link to="/work" style={{ textDecoration: "none", color: "#000" }}>
+            Work.
+          </Link>
         </h2>
         <h2
           style={{

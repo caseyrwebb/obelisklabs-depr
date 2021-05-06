@@ -1,4 +1,4 @@
-function ComputerImage() {
+function SmallComputer() {
   return (
     <div
       style={{
@@ -7,10 +7,10 @@ function ComputerImage() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        maxWidth: "670px",
-        minWidth: "600px",
+        maxWidth: "500px",
+        minWidth: "200px",
         maxHeight: "400px",
-        minHeight: "350px",
+        minHeight: "300px",
       }}
     >
       <div
@@ -55,4 +55,4 @@ function ComputerImage() {
   );
 }
 
-export default ComputerImage;
+export default SmallComputer;

@@ -9,6 +9,10 @@ import { FaLinkedin } from "react-icons/fa";
 import SpaceImage from "../../components/SpaceImage/SpaceImage";
 
 function LargeWork() {
+  const handleClick = (arg) => {
+    window.location.href = arg;
+  };
+
   return (
     <>
       <div
@@ -92,7 +96,9 @@ function LargeWork() {
                       display: "flex",
                       justifyContent: "center",
                       marginTop: "25%",
+                      cursor: "pointer",
                     }}
+                    onClick={() => handleClick("/work/fetch")}
                   >
                     <p
                       style={{
@@ -192,7 +198,9 @@ function LargeWork() {
                       display: "flex",
                       justifyContent: "center",
                       marginTop: "23.5%",
+                      cursor: "pointer",
                     }}
+                    onClick={() => handleClick("/work/hydro")}
                   >
                     <p
                       style={{
@@ -274,7 +282,9 @@ function LargeWork() {
                       display: "flex",
                       justifyContent: "center",
                       marginTop: "25%",
+                      cursor: "pointer",
                     }}
+                    onClick={() => handleClick("/work/splash")}
                   >
                     <p
                       style={{
@@ -316,7 +326,9 @@ function LargeWork() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          marginTop: "1em",
+          position: "absolute",
+          bottom: "10px",
+          width: "100%",
         }}
       >
         <p
@@ -331,12 +343,26 @@ function LargeWork() {
         <div
           style={{ display: "flex", flexDirection: "row", marginRight: "2em" }}
         >
-          <FaGithub
-            style={{ fontSize: "2.5em", marginRight: "0.25em", color: "#fff" }}
-          />
-          <FaLinkedin
-            style={{ fontSize: "2.5em", marginLeft: "0.25em", color: "#fff" }}
-          />
+          <a
+            href="https://github.com/caseyrwebb"
+            style={{ textDecoration: "none" }}
+          >
+            <FaGithub
+              style={{
+                fontSize: "2.5em",
+                marginRight: "0.25em",
+                color: "#fff",
+              }}
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/casey-webb-88a7481a5/"
+            style={{ textDecoration: "none" }}
+          >
+            <FaLinkedin
+              style={{ fontSize: "2.5em", marginLeft: "0.25em", color: "#fff" }}
+            />
+          </a>
         </div>
       </div>
     </>

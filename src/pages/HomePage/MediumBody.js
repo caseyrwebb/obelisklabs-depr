@@ -12,6 +12,10 @@ import PhoneImage from "./PhoneImage";
 import Contact from "../Contact/MediumContact";
 
 function MediumBody() {
+  const handleClick = (arg) => {
+    window.location.href = arg;
+  };
+
   let mark = "'";
 
   return (
@@ -216,13 +220,16 @@ function MediumBody() {
           }}
         >
           <div
+            className="fetch-logo"
             style={{
               display: "flex",
               color: "#00e676",
               alignItems: "center",
               justifyContent: "center",
               marginRight: "3em",
+              cursor: "pointer",
             }}
+            onClick={() => handleClick("/work/fetch")}
           >
             <FaScroll style={{ fontSize: "4em" }} />
             <h1
@@ -236,13 +243,16 @@ function MediumBody() {
             </h1>
           </div>
           <div
+            className="hydro-logo"
             style={{
               display: "flex",
               color: "#fff",
               alignItems: "center",
               justifyContent: "center",
               marginLeft: "3em",
+              cursor: "pointer",
             }}
+            onClick={() => handleClick("/work/hydro")}
           >
             <FaCoins style={{ fontSize: "4em" }} />
             <div
@@ -288,7 +298,9 @@ function MediumBody() {
             paddingLeft: "1em",
             marginTop: "1em",
             marginBottom: "4em",
+            cursor: "pointer",
           }}
+          onClick={() => handleClick("/work")}
         >
           <p
             style={{
@@ -325,8 +337,18 @@ function MediumBody() {
         <div
           style={{ display: "flex", flexDirection: "row", marginRight: "2em" }}
         >
-          <FaGithub style={{ fontSize: "2.5em", marginRight: "0.25em" }} />
-          <FaLinkedin style={{ fontSize: "2.5em", marginLeft: "0.25em" }} />
+          <a
+            href="https://github.com/caseyrwebb"
+            style={{ textDecoration: "none" }}
+          >
+            <FaGithub style={{ fontSize: "2.5em", marginRight: "0.25em" }} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/casey-webb-88a7481a5/"
+            style={{ textDecoration: "none" }}
+          >
+            <FaLinkedin style={{ fontSize: "2.5em", marginLeft: "0.25em" }} />
+          </a>
         </div>
       </div>
     </>

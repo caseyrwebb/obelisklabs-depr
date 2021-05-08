@@ -21,7 +21,18 @@ function SmallNav() {
 
   const handleClose = () => {
     setAnchorEl(null);
-    window.location.href = "/work";
+  };
+
+  const handleChange = (option) => {
+    if (option === "Home") {
+      window.location.href = "/";
+    } else if (option === "Work") {
+      window.location.href = "/work";
+    } else if (option === "About") {
+      window.location.href = "/about";
+    } else {
+      window.location.href = "/contact";
+    }
   };
 
   return (
@@ -85,7 +96,7 @@ function SmallNav() {
               <MenuItem
                 key={option}
                 selected={option === "Pyxis"}
-                onClick={handleClose}
+                onClick={() => handleChange(option)}
               >
                 {option}
               </MenuItem>
@@ -162,7 +173,9 @@ function LargeNav() {
             marginRight: "0.5em",
           }}
         >
-          About.
+          <Link to="/about" style={{ textDecoration: "none", color: "#000" }}>
+            About.
+          </Link>
         </h2>
         <h2
           style={{
@@ -175,7 +188,9 @@ function LargeNav() {
             color: "white",
           }}
         >
-          Contact.
+          <Link to="/contact" style={{ textDecoration: "none", color: "#fff" }}>
+            Contact.
+          </Link>
         </h2>
       </div>
     </div>

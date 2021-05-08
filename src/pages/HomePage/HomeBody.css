@@ -7,3 +7,15 @@
   flex-direction: column;
   align-items: center;
 }
+
+.fetch-logo:hover {
+  -webkit-transform: rotateZ(-15deg);
+  -ms-transform: rotateZ(-15deg);
+  transform: rotateZ(-15deg);
+}
+
+.hydro-logo:hover {
+  -webkit-transform: rotateZ(-15deg);
+  -ms-transform: rotateZ(-15deg);
+  transform: rotateZ(-15deg);
+}

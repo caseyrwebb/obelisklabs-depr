@@ -119,7 +119,7 @@ function LargeBody() {
                   <h2>- Store data... in the cloud.</h2>
                 </li>
                 <li>
-                  <h2>- Make app</h2>
+                  <h2>- Provable records.</h2>
                 </li>
               </ul>
             </div>
@@ -183,7 +183,7 @@ function LargeBody() {
                   <h2>- Onboard, at scale.</h2>
                 </li>
                 <li>
-                  <h2>- Make app</h2>
+                  <h2>- Peer-to-Peer.</h2>
                 </li>
               </ul>
             </div>

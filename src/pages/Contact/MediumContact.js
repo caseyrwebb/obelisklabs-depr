@@ -1,4 +1,35 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 function MediumContact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const emailData = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    axios
+      .post(
+        "https://us-central1-webportfolio-da791.cloudfunctions.net/api/email",
+        emailData
+      )
+      .then((res) => {
+        console.log(res.data);
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((err) => {
+        setErrors(err.response.data);
+      });
+  };
+
   return (
     <div
       style={{
@@ -43,11 +74,14 @@ function MediumContact() {
           the contact info listed below.
         </p>
         <form
+          onSubmit={handleSubmit}
           style={{ display: "flex", flexDirection: "column", width: "70%" }}
         >
           <input
             type="text"
             name="name"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
             placeholder="Your Name"
             style={{ fontSize: "2em", marginTop: "0.5em", width: "100%" }}
           />
@@ -55,6 +89,8 @@ function MediumContact() {
           <input
             type="email"
             name="email"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
             placeholder="Your Email"
             style={{ fontSize: "2em", marginTop: "0.5em", width: "100%" }}
           />
@@ -62,6 +98,8 @@ function MediumContact() {
           <textarea
             id="message"
             name="message"
+            value={message}
+            onChange={(event) => setMessage(event.target.value)}
             placeholder="Your Message"
             style={{
               fontSize: "2em",
